@@ -4,3 +4,4 @@
 * **react-router-dom**
 * **react-chartjs-2**
 * **chart.js**
+* **react-transition-group**
