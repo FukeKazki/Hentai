@@ -1,20 +1,24 @@
 import React from 'react';
-import { withStyles } from '@material-ui/core/styles';
 import TextField from '@material-ui/core/TextField';
 import Button from '@material-ui/core/Button';
 
-const AuthPage = props => {
-	const { classes } = props;
-	return(
-		<div className={classes.authContainer}>
+class AuthPage extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      }
+    }
+  render(){
+    return(
+		  <div style={styles.authContainer}>
         <div>
-        <Button className={classes.noSelected}>新規登録</Button>
-        <Button className={classes.Selected}>ログイン</Button>
+        <Button style={styles.noSelected}>新規登録</Button>
+        <Button style={styles.Selected}>ログイン</Button>
         </div>
         <TextField
           id="filled-email-input"
           label="Email"
-          className={classes.textField}
+          style={styles.textField}
           type="email"
           name="email"
           autoComplete="email"
@@ -24,21 +28,22 @@ const AuthPage = props => {
         <TextField
           id="filled-password-input"
           label="Password"
-          className={classes.textField}
+          style={styles.textField}
           type="password"
           autoComplete="current-password"
           margin="normal"
           variant="filled"
         />
-        <Button variant="contained" className={classes.button}>
+        <Button variant="contained" style={styles.button}>
           ログイン
         </Button>
-		</div>
-	);
+		  </div>
+	  );
+  }
 }
 
-const styles = theme => ({
-	authContainer: {
+const styles = {
+  authContainer: {
     position: "fixed",
     background: "rgba( 0, 0, 0, 0.85 )",
     height: "100%",
@@ -50,8 +55,6 @@ const styles = theme => ({
     alignItems: "center",
   },
   textField: {
-    marginLeft: theme.spacing.unit,
-    marginRight: theme.spacing.unit,
     background: "#fff",
     width: "25%",
   },
@@ -71,13 +74,12 @@ const styles = theme => ({
     color: "#fff"
   },
   button: {
-    margin: theme.spacing.unit,
     height: "50px",
     width: "25%",
     color: "#fff",
     fontSize: "20px",
     background: "#C400FF",
-  },
-});
+  }
+};
 
-export default withStyles(styles)(AuthPage);
+export default (props)=> <AuthPage style={styles}{...props}/>;
