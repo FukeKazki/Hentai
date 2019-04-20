@@ -1,22 +1,20 @@
 import React from 'react';
 import { withStyles } from '@material-ui/core/styles';
-import Button from '@material-ui/core/Button';
 
-import Movie from '../../molecules/Movie/default';
+import SideMovie from '../../molecules/Movie/sideMovie';
 
 const HomeMovies = props => {
     const { classes } = props;
     return(
         <div className={classes.root}>
-            <h3>{props.articleTitle}</h3>
             <div>
                 <ul className={classes.lists}>
                     {
                         props.movies.map(movie => (
                             <li key={movie.id} className={classes.list}>
-                                <Movie
+                                <SideMovie
                                     title={movie.title}
-                                    // description={movie.description}
+                                    description={movie.description}
                                     count={movie.count}
                                 />
                             </li>
@@ -24,7 +22,6 @@ const HomeMovies = props => {
                     }
                 </ul>
             </div>
-            <Button>もっと見る</Button>
         </div>
     );
 }
@@ -37,7 +34,7 @@ const styles = theme => ({
     },
     lists: {
         display: 'flex',
-        flexWrap: 'wrap',
+        flexDirection: 'column',
     },
     list: {
         listStyle: 'none',
