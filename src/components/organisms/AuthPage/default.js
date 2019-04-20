@@ -6,14 +6,23 @@ class AuthPage extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      }
+      option: false
     }
+    this.toSignIn = this.toSignIn.bind(this);
+    this.toSignUp = this.toSignUp.bind(this);
+  }
+  toSignIn(){
+    this.setState({option:false});
+  }
+  toSignUp(){
+    this.setState({option:true});
+  }
   render(){
     return(
 		  <div style={styles.authContainer}>
         <div>
-        <Button style={styles.noSelected}>新規登録</Button>
-        <Button style={styles.Selected}>ログイン</Button>
+        <Button style={(this.state.option?styles.Selected:styles.noSelected)} onClick={this.toSignUp}>新規登録</Button>
+        <Button style={(this.state.option?styles.noSelected:styles.Selected)} onClick={this.toSignIn}>ログイン</Button>
         </div>
         <TextField
           id="filled-email-input"
@@ -35,7 +44,7 @@ class AuthPage extends React.Component {
           variant="filled"
         />
         <Button variant="contained" style={styles.button}>
-          ログイン
+          {(this.state.option?"ログイン":"登録")}
         </Button>
 		  </div>
 	  );
