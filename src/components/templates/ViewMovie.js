@@ -75,7 +75,7 @@ class ViewMovie extends Component {
         <div style={styles.main}>
 
           <div style={styles.left}>
-            <div>ここにLive2d</div>
+            <div style={styles.movie}>ここにLive2d</div>
           </div>
 
           <div style={styles.right}>
@@ -103,16 +103,23 @@ const styles = {
     backgroundColor: '#ddd',
   },
   left: {
-    width: '70%',
+    width: '1000px',
   },
   right: {
-    widht: '30%',
+    widht: '200px',
   },
   tagHeader: {
     marginTop: '100px',
+    padding: '.5em 2em',
     display: 'flex',
     alignItems: 'center',
     backgroundColor: '#ccc',
+  },
+  movie: {
+    width: '90%',
+    height: '500px',
+    margin: '2em auto',
+    backgroundColor: '#fff',
   }
 }
 

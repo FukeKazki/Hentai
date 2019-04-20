@@ -23,6 +23,10 @@ const Tags = props => {
 }
 
 const styles = theme => ({
+    root: {
+        // backgroundColor: '#fff',
+        padding: '0 2em',
+    },
     lists: {
         display: 'flex',
     },
