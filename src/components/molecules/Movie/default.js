@@ -7,24 +7,31 @@ import CardActionArea from '@material-ui/core/CardActionArea';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 
+import { Link } from 'react-router-dom';
+
 const Movie = props => {
     const { classes } = props;
     return(
         <Card className={classes.card}>
-            <CardActionArea>
-                <CardMedia
-                    className={classes.media}
-                    title={props.title}
-                />
-                <CardContent className={classes.content}>
-                    <Typography gutterBottom variant="h5" content="h5">
-                        {props.title}
-                    </Typography>
-                    <Typography component="p">
-                        再生回数{props.count}
-                    </Typography>
-                </CardContent>
-            </CardActionArea>
+            <Link 
+                to='/movie'
+                className={classes.link}
+            >
+                <CardActionArea>
+                    <CardMedia
+                        className={classes.media}
+                        title={props.title}
+                    />
+                    <CardContent className={classes.content}>
+                        <Typography gutterBottom variant="h5" content="h5">
+                            {props.title}
+                        </Typography>
+                        <Typography component="p">
+                            再生回数{props.count}
+                        </Typography>
+                    </CardContent>
+                </CardActionArea>
+			</Link>
         </Card>
     );
 }
@@ -45,6 +52,9 @@ const styles = theme => ({
         display: 'flex',
         justifyContent: 'space-around',
         alignItems: 'center',
+    },
+    link: {
+        textDecoration: 'none',
     },
 });
 

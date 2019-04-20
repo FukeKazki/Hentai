@@ -29,9 +29,12 @@ const styles = theme => ({
     },
     lists: {
         display: 'flex',
+        flexWrap: 'wrap',
     },
     list: {
         listStyle: 'none',
+        marignRight: '2px',
+        marginBottom: '2px',
     }
 });
 

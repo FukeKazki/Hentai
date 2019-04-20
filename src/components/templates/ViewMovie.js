@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import Header from '../organisms/Header/default';
+// import Header from '../organisms/Header/default';
 
 import SideMovies from '../organisms/HomeMovies/sideMovie';
 
@@ -65,7 +65,7 @@ class ViewMovie extends Component {
   render() {
     return (
       <div className="Home">
-        <Header />
+        {/* <Header /> */}
         <div style={styles.tagHeader}>
           過去の視聴のジャンル
           <Tags
@@ -109,7 +109,7 @@ const styles = {
     widht: '200px',
   },
   tagHeader: {
-    marginTop: '100px',
+    marginTop: '70px',
     padding: '.5em 2em',
     display: 'flex',
     alignItems: 'center',
@@ -120,7 +120,7 @@ const styles = {
     height: '500px',
     margin: '2em auto',
     backgroundColor: '#fff',
-  }
+  },
 }
 
 export default ViewMovie;
