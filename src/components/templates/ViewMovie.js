@@ -64,10 +64,22 @@ class ViewMovie extends Component {
     return (
       <div className="Home">
         <Header />
+        <div style={{marginTop: '100px'}}>過去の視聴のジャンル</div>
         <div style={styles.main}>
-          <SideMovies 
-            movies = {this.state.movies}
-          />
+
+          <div style={styles.left}>
+            <div>ここにLive2d</div>
+          </div>
+
+          <div style={styles.right}>
+            <h3>おすすめのジャンル</h3>
+            <div>タグ</div>
+            <h3>おすすめの動画</h3>
+            <SideMovies 
+              movies = {this.state.movies}
+            />
+          </div>
+
         </div>
       </div>
     );
@@ -79,6 +91,14 @@ const styles = {
     width: '1200px',
     margin: '0 auto',
     marginTop: '100px',
+    display: 'flex',
+    backgroundColor: '#ddd',
+  },
+  left: {
+    width: '70%',
+  },
+  right: {
+    widht: '30%',
   },
 }
 
