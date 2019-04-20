@@ -19,12 +19,9 @@ const Heading = props => {
 
 const styles = theme => ({
     root: {
-        display: 'flex',
-        marginTop: '100px',
-        marginLeft: '300px',
-        backgroundColor: '#ddd',
-        width: '900px',
         padding: '2em',
+        display: 'flex',
+        backgroundColor: '#ddd',
     },
     left: {
         height: '300px',

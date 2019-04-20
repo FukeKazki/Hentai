@@ -10,10 +10,20 @@ class Home extends Component {
       <div className="Home">
         <Header />
         <Sidebar />
-        <Heading />
+        <div style={styles.main}>
+          <Heading />
+        </div>
       </div>
     );
   }
+}
+
+const styles = {
+  main: {
+    marginTop: '100px',
+    marginLeft: '300px',
+    width: '900px',
+  },
 }
 
 export default Home;
