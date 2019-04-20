@@ -3,7 +3,6 @@ import { withStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
 
 import Movie from '../../molecules/Movie/default';
-import { flattenProp } from 'recompose';
 
 const HomeMovies = props => {
     const { classes } = props;

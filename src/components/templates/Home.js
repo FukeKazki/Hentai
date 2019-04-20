@@ -28,6 +28,36 @@ class Home extends Component {
           description: '動画の説明',
           count: 0,
         },
+        {
+          id: '3',
+          title: '動画D',
+          description: '動画の説明',
+          count: 0,
+        },
+        {
+          id: '4',
+          title: '動画E',
+          description: '動画の説明',
+          count: 0,
+        },
+        {
+          id: '5',
+          title: '動画F',
+          description: '動画の説明',
+          count: 0,
+        },
+        {
+          id: '6',
+          title: '動画G',
+          description: '動画の説明',
+          count: 0,
+        },
+        {
+          id: '7',
+          title: '動画H',
+          description: '動画の説明',
+          count: 0,
+        },
       ],
     };
   }
@@ -60,7 +90,7 @@ const styles = {
   main: {
     marginTop: '100px',
     marginLeft: '300px',
-    width: '900px',
+    width: '1000px',
   },
 }
 

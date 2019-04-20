@@ -16,12 +16,12 @@ const Movie = props => {
                     className={classes.media}
                     title={props.title}
                 />
-                <CardContent>
-                    <Typography gutterBottom variant="h5" content="h2">
+                <CardContent className={classes.content}>
+                    <Typography gutterBottom variant="h5" content="h5">
                         {props.title}
                     </Typography>
                     <Typography component="p">
-                        {props.description}
+                        再生回数{props.count}
                     </Typography>
                 </CardContent>
             </CardActionArea>
@@ -33,9 +33,19 @@ const styles = theme => ({
     card: {
         width: '200px',
         height: '150px',
-        marginRight: '5px',
-	    marginBottom: '5px',
-    }
+        marginRight: '10px',
+	    marginBottom: '10px',
+    },
+    media: {
+        width: '200px',
+        height: '100px',
+        backgroundColor: 'blue',
+    },
+    content: {
+        display: 'flex',
+        justifyContent: 'space-around',
+        alignItems: 'center',
+    },
 });
 
 export default withStyles(styles)(Movie);
