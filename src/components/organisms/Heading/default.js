@@ -24,8 +24,13 @@ const styles = theme => ({
         backgroundColor: '#ddd',
     },
     left: {
+        display: 'flex',
         height: '300px',
         width: '50%',
+        flexDirection: 'column',
+        textAlign: 'center',
+        justifyContent: 'center',
+        alignItems: 'center',
     },
     right: {
         height: '300px',
