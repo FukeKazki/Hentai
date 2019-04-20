@@ -4,6 +4,8 @@ import Header from '../organisms/Header/default';
 
 import SideMovies from '../organisms/HomeMovies/sideMovie';
 
+import Tags from '../organisms/Tags/default';
+
 class ViewMovie extends Component {
   constructor(props) {
     super(props);
@@ -64,7 +66,12 @@ class ViewMovie extends Component {
     return (
       <div className="Home">
         <Header />
-        <div style={{marginTop: '100px'}}>過去の視聴のジャンル</div>
+        <div style={styles.tagHeader}>
+          過去の視聴のジャンル
+          <Tags
+            tags = {this.state.movies}
+          />
+        </div>
         <div style={styles.main}>
 
           <div style={styles.left}>
@@ -73,7 +80,9 @@ class ViewMovie extends Component {
 
           <div style={styles.right}>
             <h3>おすすめのジャンル</h3>
-            <div>タグ</div>
+            <Tags
+              tags = {this.state.movies}
+            />
             <h3>おすすめの動画</h3>
             <SideMovies 
               movies = {this.state.movies}
@@ -90,7 +99,6 @@ const styles = {
   main: {
     width: '1200px',
     margin: '0 auto',
-    marginTop: '100px',
     display: 'flex',
     backgroundColor: '#ddd',
   },
@@ -100,6 +108,12 @@ const styles = {
   right: {
     widht: '30%',
   },
+  tagHeader: {
+    marginTop: '100px',
+    display: 'flex',
+    alignItems: 'center',
+    backgroundColor: '#ccc',
+  }
 }
 
 export default ViewMovie;
