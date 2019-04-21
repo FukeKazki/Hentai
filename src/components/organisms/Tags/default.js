@@ -12,7 +12,7 @@ const Tags = props => {
                         props.tags.map(tag => (
                             <li className={classes.list}>
                                 <Tag
-                                    label={tag.title}     
+                                    label={tag.tag}     
                                 />
                             </li>
                         ))
