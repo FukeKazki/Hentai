@@ -23,9 +23,6 @@ class AuthPage extends React.Component {
   textClick(e){
     e.stopPropagation();
   }
-  buttonClick(e){
-    e.stopPropagation();
-  }
   render(){
     return(
 		  <div style={styles.authContainer} onClick={this.props.authToggle}>
@@ -54,8 +51,8 @@ class AuthPage extends React.Component {
           variant="filled"
           onClick={this.textClick}
         />
-        <Button variant="contained" style={styles.button} onClick={this.buttonClick}>
-          {(this.state.option?"ログイン":"登録")}
+        <Button variant="contained" style={styles.button}>
+          {(this.state.option?"登録":"ログイン")}
         </Button>
 		  </div>
 	  );
