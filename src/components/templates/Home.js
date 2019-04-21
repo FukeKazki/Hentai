@@ -62,7 +62,7 @@ class Home extends Component {
           count: 0,
         },
       ],
-      shown: true,
+      shown: false,
     };
     this.authToggle = this.authToggle.bind(this);
   }
