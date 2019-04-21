@@ -5,21 +5,30 @@ import Button from '@material-ui/core/Button';
 class AuthPage extends React.Component {
   constructor(props) {
     super(props);
+		console.log(props);
     this.state = {
       option: false
     }
     this.toSignIn = this.toSignIn.bind(this);
     this.toSignUp = this.toSignUp.bind(this);
   }
-  toSignIn(){
+  toSignIn(e){
+    e.stopPropagation();
     this.setState({option:false});
   }
-  toSignUp(){
+  toSignUp(e){
+    e.stopPropagation();
     this.setState({option:true});
+  }
+  textClick(e){
+    e.stopPropagation();
+  }
+  buttonClick(e){
+    e.stopPropagation();
   }
   render(){
     return(
-		  <div style={styles.authContainer}>
+		  <div style={styles.authContainer} onClick={this.props.authToggle}>
         <div>
         <Button style={(this.state.option?styles.Selected:styles.noSelected)} onClick={this.toSignUp}>新規登録</Button>
         <Button style={(this.state.option?styles.noSelected:styles.Selected)} onClick={this.toSignIn}>ログイン</Button>
@@ -33,6 +42,7 @@ class AuthPage extends React.Component {
           autoComplete="email"
           margin="normal"
           variant="filled"
+          onClick={this.textClick}
         />
         <TextField
           id="filled-password-input"
@@ -42,8 +52,9 @@ class AuthPage extends React.Component {
           autoComplete="current-password"
           margin="normal"
           variant="filled"
+          onClick={this.textClick}
         />
-        <Button variant="contained" style={styles.button}>
+        <Button variant="contained" style={styles.button} onClick={this.buttonClick}>
           {(this.state.option?"ログイン":"登録")}
         </Button>
 		  </div>
@@ -55,7 +66,7 @@ const styles = {
   authContainer: {
     position: "fixed",
     background: "rgba( 0, 0, 0, 0.85 )",
-    height: "100%",
+    height: "105%",
     width: "100%",
     zIndex: "10000",
     display: "flex",

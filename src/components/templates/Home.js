@@ -4,6 +4,9 @@ import Header from '../organisms/Header/default';
 import Sidebar from '../organisms/Sidebar/default';
 import Heading from '../organisms/Heading/default';
 import HomeMovies from '../organisms/HomeMovies/default';
+import AuthPage from '../organisms/AuthPage/default';
+import { Button } from '@material-ui/core';
+
 
 class Home extends Component {
   constructor(props) {
@@ -59,15 +62,24 @@ class Home extends Component {
           count: 0,
         },
       ],
+      shown: true,
     };
+    this.authToggle = this.authToggle.bind(this);
   }
+  authToggle() {
+    console.log("AUTH");
+		this.setState({
+			shown: !this.state.shown
+	});
+	}
   render() {
     return (
       <div className="Home">
-        <Header />
+        {this.state.shown?<AuthPage authToggle={this.authToggle}/>:''}
+        <Header authToggle={this.authToggle}/>
         <Sidebar />
         <div style={styles.main}>
-          <Heading />
+          <Heading/>
           <HomeMovies 
             articleTitle = 'あなたへのおすすめ'
             movies = {this.state.movies}
@@ -94,4 +106,43 @@ const styles = {
   },
 }
 
+const classes = {
+  authContainer: {
+    position: "fixed",
+    background: "rgba( 0, 0, 0, 0.85 )",
+    height: "100%",
+    width: "100%",
+    zIndex: "10000",
+    display: "flex",
+    flexFlow: "column",
+    justifyContent: "center",
+    alignItems: "center",
+  },
+  textField: {
+    background: "#fff",
+    width: "25%",
+  },
+  Selected: {
+    marginLeft: "60px",
+    marginRight: "60px",
+    marginButtom: "60px",
+    fontSize: "20px",
+    fontWeight: "bold",
+    color: "#C400FF"
+  },
+  noSelected: {
+    marginLeft: "60px",
+    marginRight: "60px",
+    marginButtom: "60px",
+    fontSize: "20px",
+    color: "#fff"
+  },
+  button: {
+    height: "50px",
+    width: "25%",
+    color: "#fff",
+    fontSize: "20px",
+    background: "#C400FF",
+  },
+}
 export default Home;
