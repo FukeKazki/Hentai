@@ -7,8 +7,12 @@ import Button from '@material-ui/core/Button';
 import SearchIcon from '@material-ui/icons/Search';
 import { fade } from '@material-ui/core/styles/colorManipulator';
 import InputBase from '@material-ui/core/InputBase';
-
+import {　createGlobalStyle } from 'styled-components';
 import { NavLink } from 'react-router-dom';
+
+createGlobalStyle`
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+`
 
 const Header = props => {
 	const { classes } = props;
@@ -45,6 +49,7 @@ const Header = props => {
 const styles = theme => ({
 	appBar: {
 		zIndex: 9999,
+		backgroundColor: "#9800FF",
 	},
 	grow: {
 		flexGrow: 1,
@@ -93,9 +98,14 @@ const styles = theme => ({
 	button: {
 		color: '#fff',
 		marginLeft: '2em',
+		borderLeft: '#fff 1px solid',
+		borderRight: '#fff 1px solid',
 	},
 	title: {
 		color: '#fff',
+		fontSize: "35px",
+    	fontWeight: "bold",
+		fontFamily: "Lobster, cursive",
 	},
 	link: {
 		textDecoration: 'none',
