@@ -34,8 +34,8 @@ const Header = props => {
 						}}
 						/>
 					</div>
-					<Button className={classes.button}>ログイン</Button>
-					<Button className={classes.button}>新規登録</Button>
+					<Button className={classes.button} onClick={props.authToggle}>ログイン</Button>
+					<Button className={classes.button} onClick={props.authToggle}>新規登録</Button>
 				</Toolbar>
 			</AppBar>
 		</div>
