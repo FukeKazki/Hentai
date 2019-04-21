@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
-
 // import Header from '../organisms/Header/default';
-
 import SideMovies from '../organisms/HomeMovies/sideMovie';
-
 import Tags from '../organisms/Tags/default';
-
 import YoutubePlayer from '../organisms/Player/default';
+import {createGlobalStyle} from 'styled-components';
+
+createGlobalStyle`
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif+TC');
+`
 
 class ViewMovie extends Component {
   constructor(props) {
@@ -153,7 +154,10 @@ class ViewMovie extends Component {
           },
           {
             tag: 'スク水',
-          }
+          },
+          {
+            tag: '未亡人',
+          },
         ],
     };
   }
@@ -181,11 +185,12 @@ class ViewMovie extends Component {
           </div>
 
           <div style={styles.right}>
-            <h3>おすすめのジャンル</h3>
+            <h3 style={styles.textH3}>おすすめのジャンル</h3>
             <Tags
               tags = {this.state.recommendTag}
+              style = {styles.Recommended}
             />
-            <h3>おすすめの動画</h3>
+            <h3 style={styles.textH3}>おすすめの動画</h3>
             <SideMovies 
               movies = {this.state.demoMovie}
             />
@@ -202,21 +207,33 @@ const styles = {
     width: '1200px',
     margin: '0 auto',
     display: 'flex',
-    backgroundColor: '#ddd',
+    backgroundColor: '#fff',
   },
   left: {
+    marginTop:'20px',
     width: '1000px',
   },
   right: {
+    textAlign: 'left',
     widht: '200px',
   },
+  Recommended: {
+    width: 'auto',
+  },
   tagHeader: {
-    marginTop: '70px',
-    padding: '.5em 2em',
+    height: '35px',
+    marginTop: '64px',
+    padding: '.5em 1em',
     display: 'flex',
     alignItems: 'center',
-    backgroundColor: '#ccc',
+    color: '#fff',
+    fontSize: '18px',
+    backgroundColor: '#233',
   },
+  textH3: {
+    padding: '.5em',
+    textFamily: 'Noto Serif TC, serif',
+  }
   // movie: {
   //   width: '90%',
   //   height: '500px',
