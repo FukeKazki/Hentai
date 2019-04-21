@@ -32,11 +32,11 @@ const sideMovie = props => {
                                 再生回数{props.count}
                             </Typography>
                         </div>
-                        <div className={classes.bottom}>
+                        {/* <div className={classes.bottom}>
                             <Typography component="p">
                                 {props.description}
                             </Typography>
-                        </div>
+                        </div> */}
                     </CardContent>
                 </CardActionArea>
             </Link>
@@ -69,6 +69,8 @@ const styles = theme => ({
     },
     title: {
         fontWeight: 'bold',
+        color: '#000',
+        fontSize: '2em',
     },
     link: {
         textDecoration: 'none',
