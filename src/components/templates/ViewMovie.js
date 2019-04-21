@@ -25,6 +25,7 @@ class ViewMovie extends Component {
             count: 274.905,
             url: 'https://youtu.be/grzAbtw4zdI',
             tag: 'タグA',
+            image: '',
           },
           {
             id: '1',
@@ -33,6 +34,7 @@ class ViewMovie extends Component {
             count: 0,
             url: 'https://youtu.be/MXzFIxF1X30',
             tag: 'タグB',
+            image: '',
           },
           {
             id: '2',
@@ -40,7 +42,8 @@ class ViewMovie extends Component {
             description: '動画の説明',
             count: 0,
             url: 'https://youtu.be/t5r0rNwjXQU',
-            tag: 'タグC'
+            tag: 'タグC',
+            image: '',
           },
           {
             id: '3',
@@ -48,7 +51,8 @@ class ViewMovie extends Component {
             description: '動画の説明',
             count: 0,
             url: 'https://youtu.be/t5r0rNwjXQU',
-            tag: 'タグD'
+            tag: 'タグD',
+            image: '',
           },
           {
             id: '4',
@@ -56,7 +60,8 @@ class ViewMovie extends Component {
             description: '動画の説明',
             count: 0,
             url: 'https://youtu.be/t5r0rNwjXQU',
-            tag: 'タグE'
+            tag: 'タグE',
+            image: '',
           },
           {
             id: '5',
@@ -64,7 +69,8 @@ class ViewMovie extends Component {
             description: '動画の説明',
             count: 0,
             url: 'https://youtu.be/t5r0rNwjXQU',
-            tag: 'タグF'
+            tag: 'タグF',
+            image: '',
           },
           {
             id: '6',
@@ -72,7 +78,8 @@ class ViewMovie extends Component {
             description: '動画の説明',
             count: 0,
             url: 'https://youtu.be/t5r0rNwjXQU',
-            tag: 'タグG'
+            tag: 'タグG',
+            image: '',
           },
           {
             id: '7',
@@ -80,44 +87,50 @@ class ViewMovie extends Component {
             description: '動画の説明',
             count: 0,
             url: 'https://youtu.be/t5r0rNwjXQU',
-            tag: 'タグH'
+            tag: 'タグH',
+            image: '',
           },
         ],
         demoMovie: [
           {
             id: '7',
-            title: 'サイド動画',
+            title: 'Unity',
             description: '動画の説明',
-            count: 0,
+            count: 114,
             url: 'https://youtu.be/t5r0rNwjXQU',
+            image: 'https://raw.githubusercontent.com/nkmk/python-snippets/c2e98d06c9a526ebe6898bb4ac4eaeb5424edfd0/notebook/data/dst/opencv_mosaic_005.jpg',
           },
           {
             id: '7',
-            title: 'サイド動画',
+            title: 'CAT',
             description: '動画の説明',
-            count: 0,
+            count: 514,
             url: 'https://youtu.be/t5r0rNwjXQU',
+            image: 'http://cdn-ak.f.st-hatena.com/images/fotolife/m/mosshm/20080720/20080720184432.jpg',
           },
           {
             id: '7',
-            title: 'サイド動画',
+            title: 'アニメ',
             description: '動画の説明',
-            count: 0,
+            count: 191,
             url: 'https://youtu.be/t5r0rNwjXQU',
+            image: 'http://sites.cybernoids.jp/cubism2/_/rsrc/1502985979156/samples/2017-08-18_01h05_25.png',
           },
           {
             id: '7',
-            title: 'サイド動画',
+            title: 'JK',
             description: '動画の説明',
-            count: 0,
+            count: 981,
             url: 'https://youtu.be/t5r0rNwjXQU',
+            image: 'http://blog-imgs-58.fc2.com/t/o/t/totalmatomedia/2013072601.png',
           },
           {
             id: '7',
-            title: 'サイド動画',
+            title: '百合',
             description: '動画の説明',
             count: 0,
             url: 'https://youtu.be/t5r0rNwjXQU',
+            image: 'http://ecx.images-amazon.com/images/I/41tVgQhpvwL.jpg',
           },
         ],
         pastTag: [

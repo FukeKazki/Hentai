@@ -3,8 +3,6 @@ import { withStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
 import ReactPlayer from 'react-player';
 
-import YoutubePlayer from '../Player/default';
-
 const Heading = props => {
     const { classes } = props;
     return(

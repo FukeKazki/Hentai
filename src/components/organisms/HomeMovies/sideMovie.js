@@ -16,6 +16,7 @@ const HomeMovies = props => {
                                     title={movie.title}
                                     description={movie.description}
                                     count={movie.count}
+                                    image={movie.image}
                                 />
                             </li>
                         ))

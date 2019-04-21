@@ -21,6 +21,7 @@ const sideMovie = props => {
                     <CardMedia
                         className={classes.media}
                         title={props.title}
+                        image={props.image}
                     />
                     <CardContent className={classes.content}>
                         <div className={classes.top}>
