@@ -18,48 +18,63 @@ class Home extends Component {
           title: '動画A',
           description: '動画の説明',
           count: 0,
+          image: 'https://pbs.twimg.com/profile_images/938388942365134849/aEIz6tX-.jpg',
         },
         {
           id: '1',
           title: '動画B',
           description: '動画の説明',
           count: 0,
+          image: 'http://cdn-ak.f.st-hatena.com/images/fotolife/m/mosshm/20080720/20080720184432.jpg',
+
         },
         {
           id: '2',
           title: '動画C',
           description: '動画の説明',
           count: 0,
+          image: 'http://cdn-ak.f.st-hatena.com/images/fotolife/m/mosshm/20080720/20080720184432.jpg',
+
         },
         {
           id: '3',
           title: '動画D',
           description: '動画の説明',
           count: 0,
+          image: 'https://rr.img.naver.jp/mig?src=http%3A%2F%2Fimgcc.naver.jp%2Fkaze%2Fmission%2FUSER%2F20170113%2F28%2F2894568%2F0%2F322x457xf19c5270b36be8a01dfbc58a.jpg%2F300%2F600&twidth=300&theight=600&qlt=80&res_format=jpg&op=r',
+
         },
         {
           id: '4',
           title: '動画E',
           description: '動画の説明',
           count: 0,
+          image: 'http://cdn-ak.f.st-hatena.com/images/fotolife/m/mosshm/20080720/20080720184432.jpg',
+
         },
         {
           id: '5',
           title: '動画F',
           description: '動画の説明',
           count: 0,
+          image: 'http://cdn-ak.f.st-hatena.com/images/fotolife/m/mosshm/20080720/20080720184432.jpg',
+
         },
         {
           id: '6',
           title: '動画G',
           description: '動画の説明',
           count: 0,
+          image: 'http://cdn-ak.f.st-hatena.com/images/fotolife/m/mosshm/20080720/20080720184432.jpg',
+
         },
         {
           id: '7',
           title: '動画H',
           description: '動画の説明',
           count: 0,
+          image: 'http://cdn-ak.f.st-hatena.com/images/fotolife/m/mosshm/20080720/20080720184432.jpg',
+
         },
       ],
       shown: false,

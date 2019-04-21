@@ -21,6 +21,7 @@ const Movie = props => {
                     <CardMedia
                         className={classes.media}
                         title={props.title}
+                        image={props.image}
                     />
                     <CardContent className={classes.content}>
                         <Typography gutterBottom variant="h5" content="h5">
@@ -44,9 +45,9 @@ const styles = theme => ({
 	    marginBottom: '10px',
     },
     media: {
-        width: '200px',
+        // width: '200px',
         height: '100px',
-        backgroundColor: 'blue',
+        // backgroundColor: 'blue',
     },
     content: {
         display: 'flex',

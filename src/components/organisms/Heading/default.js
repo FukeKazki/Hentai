@@ -1,6 +1,9 @@
 import React from 'react';
 import { withStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
+import ReactPlayer from 'react-player';
+
+import YoutubePlayer from '../Player/default';
 
 const Heading = props => {
     const { classes } = props;
@@ -11,7 +14,15 @@ const Heading = props => {
                 <Button>クイズを開始する</Button>
             </div>
             <div className={classes.right}>
-                <h3>ここにLIVE2D</h3>
+                <div className={classes.playerWrapper}>
+                    <ReactPlayer
+                        className={classes.reactPlayer}
+                        url='https://youtu.be/1urAlpXhj9k'
+                        // url = {props.url}
+                        width='100%'
+                        height='100%'
+                    />
+                </div>
             </div>
         </div>
     );
@@ -33,9 +44,18 @@ const styles = theme => ({
         alignItems: 'center',
     },
     right: {
-        height: '300px',
+        // height: '300px',
         width: '50%',
-        backgroundColor: '#fff',
+        // backgroundColor: '#fff',
+    },
+    playerWrapper: {
+        position: 'relative',
+        paddingTop: '56.25%',
+    },
+    reactPlayer: {
+        position: 'absolute',
+        top: 0,
+        left: 0,
     },
 });
 
