@@ -4,7 +4,7 @@ import { withStyles } from '@material-ui/core/styles';
 import Tags from '../Tags/default';
 
 const YoutubePlayer = props => {
-    const taglist = [{tag: 'LIVE2D'},{tag: 'JK'},{tag: '制服'},];
+    const taglist = [{tag: 'LIVE2D'},{tag: 'JK'},{tag: '制服'},{tag: 'ツインテール'}];
     const { classes } = props;
     return(
         <div>
@@ -20,7 +20,7 @@ const YoutubePlayer = props => {
             <div className={classes.textBox}>
                 <h3 className={classes.title}>{props.title}</h3>
                 <p className={classes.count}>{props.count}回視聴</p>
-                <Tags tags = {taglist}/>
+                <Tags className={classes.tags} tags = {taglist}/>
                 <p className={classes.description}>{props.description}</p>
             </div>
         </div>
@@ -47,6 +47,10 @@ const styles = theme => ({
     count: {
         textAlign: 'left',
     },
+    tags: {
+        position: 'relative',
+        textAlign: 'left',
+    }
 });
 
 export default withStyles(styles)(YoutubePlayer);

@@ -29,9 +29,8 @@ const HomeMovies = props => {
 
 const styles = theme => ({
     root: {
-        padding: '.5em',
         // display: 'flex',
-        backgroundColor: '#ccc',
+        backgroundColor: '#fff',
     },
     lists: {
         display: 'flex',

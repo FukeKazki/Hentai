@@ -12,7 +12,7 @@ const Tags = props => {
                         props.tags.map(tag => (
                             <li className={classes.list}>
                                 <Tag
-                                    label={tag.tag}     
+                                    label={tag.tag}  
                                 />
                             </li>
                         ))
@@ -25,7 +25,7 @@ const Tags = props => {
 const styles = theme => ({
     root: {
         // backgroundColor: '#fff',
-        padding: '0 2em',
+        padding: '0px',
     },
     lists: {
         display: 'flex',
@@ -33,9 +33,8 @@ const styles = theme => ({
     },
     list: {
         listStyle: 'none',
-        marignRight: '2px',
-        marginBottom: '2px',
-    }
+        paddingRight: '5px',
+    },
 });
 
 export default withStyles(styles)(Tags);
