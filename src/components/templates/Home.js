@@ -15,14 +15,14 @@ class Home extends Component {
       movies: [
         {
           id: '0',
-          title: '動画A',
+          title: 'Unity',
           description: '動画の説明',
           count: 0,
-          image: 'https://pbs.twimg.com/profile_images/938388942365134849/aEIz6tX-.jpg',
+          image: 'https://raw.githubusercontent.com/nkmk/python-snippets/c2e98d06c9a526ebe6898bb4ac4eaeb5424edfd0/notebook/data/dst/opencv_mosaic_005.jpg',
         },
         {
           id: '1',
-          title: '動画B',
+          title: 'CAT',
           description: '動画の説明',
           count: 0,
           image: 'http://cdn-ak.f.st-hatena.com/images/fotolife/m/mosshm/20080720/20080720184432.jpg',
@@ -30,50 +30,50 @@ class Home extends Component {
         },
         {
           id: '2',
-          title: '動画C',
+          title: 'アニメ',
           description: '動画の説明',
           count: 0,
-          image: 'http://cdn-ak.f.st-hatena.com/images/fotolife/m/mosshm/20080720/20080720184432.jpg',
+          image: 'http://sites.cybernoids.jp/cubism2/_/rsrc/1502985979156/samples/2017-08-18_01h05_25.png',
 
         },
         {
           id: '3',
-          title: '動画D',
+          title: 'JK',
           description: '動画の説明',
           count: 0,
-          image: 'https://rr.img.naver.jp/mig?src=http%3A%2F%2Fimgcc.naver.jp%2Fkaze%2Fmission%2FUSER%2F20170113%2F28%2F2894568%2F0%2F322x457xf19c5270b36be8a01dfbc58a.jpg%2F300%2F600&twidth=300&theight=600&qlt=80&res_format=jpg&op=r',
+          image: 'http://blog-imgs-58.fc2.com/t/o/t/totalmatomedia/2013072601.png',
 
         },
         {
           id: '4',
-          title: '動画E',
+          title: 'JC',
           description: '動画の説明',
           count: 0,
-          image: 'http://cdn-ak.f.st-hatena.com/images/fotolife/m/mosshm/20080720/20080720184432.jpg',
+          image: 'https://media-groove.com/wp-content/uploads/2016/12/aeeec022e5bab8ef4f8298daa50e697c.jpg',
 
         },
         {
           id: '5',
-          title: '動画F',
+          title: '百合',
           description: '動画の説明',
           count: 0,
-          image: 'http://cdn-ak.f.st-hatena.com/images/fotolife/m/mosshm/20080720/20080720184432.jpg',
+          image: 'http://ecx.images-amazon.com/images/I/41tVgQhpvwL.jpg',
 
         },
         {
           id: '6',
-          title: '動画G',
+          title: '催眠',
           description: '動画の説明',
           count: 0,
-          image: 'http://cdn-ak.f.st-hatena.com/images/fotolife/m/mosshm/20080720/20080720184432.jpg',
+          image: 'http://i.gzn.jp/img/2010/11/27/cute_cats_pics/00_830084_62481809.jpg',
 
         },
         {
           id: '7',
-          title: '動画H',
+          title: 'JD',
           description: '動画の説明',
           count: 0,
-          image: 'http://cdn-ak.f.st-hatena.com/images/fotolife/m/mosshm/20080720/20080720184432.jpg',
+          image: 'https://d1f5hsy4d47upe.cloudfront.net/9c/9c776406a92bb1c4f5c41c78a8e493e6_t.jpeg',
 
         },
       ],
