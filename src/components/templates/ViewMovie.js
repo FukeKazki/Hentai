@@ -105,6 +105,20 @@ class ViewMovie extends Component {
             count: 0,
             url: 'https://youtu.be/t5r0rNwjXQU',
           },
+          {
+            id: '7',
+            title: 'サイド動画',
+            description: '動画の説明',
+            count: 0,
+            url: 'https://youtu.be/t5r0rNwjXQU',
+          },
+          {
+            id: '7',
+            title: 'サイド動画',
+            description: '動画の説明',
+            count: 0,
+            url: 'https://youtu.be/t5r0rNwjXQU',
+          },
         ],
         pastTag: [
           {
