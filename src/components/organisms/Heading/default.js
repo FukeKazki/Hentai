@@ -8,8 +8,8 @@ const Heading = props => {
     return(
         <div className={classes.root}>
             <div className={classes.left}>
-                <h3>それは未知との遭遇<br/>新たなる価値観を養う</h3>
-                <Button>クイズを開始する</Button>
+                <h3 className={classes.mainText}>それは未知との遭遇<br/>新たなる価値観を養う</h3>
+                <Button className={classes.quizButton}>クイズを開始する</Button>
             </div>
             <div className={classes.right}>
                 <div className={classes.playerWrapper}>
@@ -30,7 +30,8 @@ const styles = theme => ({
     root: {
         padding: '2em',
         display: 'flex',
-        backgroundColor: '#ddd',
+        backgroundColor: '#fff',
+		border: '#9800FF 1px solid',
     },
     left: {
         display: 'flex',
@@ -44,17 +45,29 @@ const styles = theme => ({
     right: {
         // height: '300px',
         width: '50%',
-        // backgroundColor: '#fff',
+        //backgroundColor: '#fff',
+    },
+    mainText: {
+        fontWeight: "bold",
+        color: "#9800FF",
+        fontSize: "40px",
     },
     playerWrapper: {
         position: 'relative',
-        paddingTop: '56.25%',
+        paddingTop: '70%',
     },
     reactPlayer: {
         position: 'absolute',
         top: 0,
         left: 0,
     },
+    quizButton: {
+        color: "#9800FF",
+        fontWeight: "bold",
+        padding: '20px',
+        backgroundColor: '#fff',
+        border: '#9800FF 3px solid',
+    }
 });
 
 export default withStyles(styles)(Heading);

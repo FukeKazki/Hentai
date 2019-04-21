@@ -34,7 +34,7 @@ const styles = theme => ({
     root: {
         padding: '2em',
         // display: 'flex',
-        backgroundColor: '#ccc',
+		borderTop: '#d6d6d6 1.2px solid',
     },
     lists: {
         display: 'flex',
